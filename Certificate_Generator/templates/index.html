@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+</head>
+<body>
+<center>
+    <h1>Automatic Certificate Generator</h1>
+    <img src="static/ce1.png" alt="certificate" height="30%" width="50%">
+    <br>
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <h3>Upload a .txt file that contains the names of the certificate holders.</h3>
+        <input type="file" name="names_file" accept=".txt" required>
+        <br><br>
+        <button type="submit">Upload and Generate</button>
+    </form>
+</center>
+</body>
+</html>
